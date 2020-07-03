@@ -1,0 +1,493 @@
+{
+  "tournaments": [
+    {
+      "id": "basic-1",
+      "type": "single-elimination",
+      "brackets": {
+        "upper": {
+          "type": "upper",
+          "bracketTops": [
+            {
+              "upperPart": {
+                "player": "Javier Dominguez",
+                "desc": "Gruul Aggro",
+                "points": 2
+              },
+              "lowerPart": {
+                "player": "Jean-Emmanuel Depraz",
+                "desc": "Gruul Aggro",
+                "points": 1
+              },
+              "winner": "upper",
+              "firstChild": {
+                "upperPart": {
+                  "player": "Javier Dominguez",
+                  "desc": "Gruul Aggro",
+                  "points": 2
+                },
+                "lowerPart": {
+                  "player": "Gabriel Nassif",
+                  "desc": "Gruul Aggro",
+                  "points": 1
+                },
+                "winner": "upper",
+                "firstChild": {
+                  "upperPart": {
+                    "player": "Stanislav Cifka",
+                    "desc": "Bant Ramp",
+                    "points": 1
+                  },
+                  "lowerPart": {
+                    "player": "Javier Dominguez",
+                    "desc": "Bant Ramp",
+                    "points": 2
+                  },
+                  "winner": "lower"
+                },
+                "secondChild": {
+                  "upperPart": {
+                    "player": "Gabriel Nassif",
+                    "desc": "Simic Food",
+                    "points": 2
+                  },
+                  "lowerPart": {
+                    "player": "William Jensen",
+                    "desc": "Simic Food",
+                    "points": 1
+                  },
+                  "winner": "upper"
+                }
+              },
+              "secondChild": {
+                "upperPart": {
+                  "player": "Andrea Mengucci",
+                  "desc": "Bant Food",
+                  "points": 1
+                },
+                "lowerPart": {
+                  "player": "Jean-Emmanuel Depraz",
+                  "desc": "Bant Food",
+                  "points": 2
+                },
+                "winner": "lower",
+                "firstChild": {
+                  "upperPart": {
+                    "player": "Andrea Mengucci",
+                    "desc": "Bant Food",
+                    "points": 2
+                  },
+                  "lowerPart": {
+                    "player": "Lee Shi Tian",
+                    "desc": "Bant Food",
+                    "points": 1
+                  },
+                  "winner": "upper"
+                },
+                "secondChild": {
+                  "upperPart": {
+                    "player": "Ken Yukuhiro",
+                    "desc": "Mardu Knights",
+                    "points": 1
+                  },
+                  "lowerPart": {
+                    "player": "Jean-Emmanuel Depraz",
+                    "desc": "Mardu Knights",
+                    "points": 2
+                  },
+                  "winner": "lower"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "id": "basic-2",
+      "type": "single-elimination",
+      "brackets": {
+        "upper": {
+          "type": "upper",
+          "bracketTops": [
+            {
+              "upperPart": {
+                "player": "Paulo Vitor Damo da Rosa",
+                "desc": "Red-White",
+                "points": 2
+              },
+              "lowerPart": {
+                "player": "Eli Loveman",
+                "desc": "Green-White",
+                "points": 1
+              },
+              "winner": "upper",
+              "firstChild": {
+                "upperPart": {
+                  "player": "Matias Leveratto",
+                  "desc": "Red-Green",
+                  "points": 0
+                },
+                "lowerPart": {
+                  "player": "Paulo Vitor Damo da Rosa",
+                  "desc": "Red-White",
+                  "points": 2
+                },
+                "winner": "lower"
+              },
+              "secondChild": {
+                "upperPart": {
+                  "player": "Raphaël Lévy",
+                  "desc": "Blue-Black",
+                  "points": 0
+                },
+                "lowerPart": {
+                  "player": "Eli Loveman",
+                  "desc": "Green-White",
+                  "points": 2
+                },
+                "winner": "lower"
+              }
+            },
+            {
+              "upperPart": {
+                "player": "Jean-Emmanuel Depraz",
+                "desc": "Four-Color",
+                "points": 0
+              },
+              "lowerPart": {
+                "player": "Chris Kvartek",
+                "desc": "Green-Blue",
+                "points": 2
+              },
+              "winner": "lower",
+              "firstChild": {
+                "upperPart": {
+                  "player": "Jean-Emmanuel Depraz",
+                  "desc": "Four-Color",
+                  "points": 2
+                },
+                "lowerPart": {
+                  "player": "Andrea Mengucci",
+                  "desc": "White-Black",
+                  "points": 1
+                },
+                "winner": "upper"
+              },
+              "secondChild": {
+                "upperPart": {
+                  "player": "Javier Dominguez",
+                  "desc": "Black-Green",
+                  "points": 1
+                },
+                "lowerPart": {
+                  "player": "Chris Kvartek",
+                  "desc": "Green-Blue",
+                  "points": 2
+                },
+                "winner": "lower"
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "id": "basic-3",
+      "type": "single-elimination",
+      "brackets": {
+        "upper": {
+          "type": "upper",
+          "bracketTops": [
+            {
+              "upperPart": {
+                "player": "player",
+                "desc": "desc",
+                "points": 1
+              },
+              "lowerPart": {
+                "player": "player",
+                "desc": "desc",
+                "points": 1
+              },
+              "winner": "upper",
+              "firstChild": {
+                "upperPart": {
+                  "player": "level2",
+                  "desc": "upper",
+                  "points": 1
+                },
+                "lowerPart": {
+                  "player": "level2",
+                  "desc": "lower",
+                  "points": 1
+                },
+                "winner": "lower",
+                "firstChild": {
+                  "upperPart": {
+                    "player": "level3",
+                    "desc": "lower",
+                    "points": 1
+                  },
+                  "lowerPart": {
+                    "player": "level3",
+                    "desc": "lower",
+                    "points": 1
+                  },
+                  "winner": "lower"
+                },
+                "secondChild": {
+                  "upperPart": {
+                    "player": "level3",
+                    "desc": "lower",
+                    "points": 1
+                  },
+                  "lowerPart": {
+                    "player": "level3",
+                    "desc": "lower",
+                    "points": 1
+                  },
+                  "winner": "lower"
+                }
+              },
+              "secondChild": {
+                "upperPart": {
+                  "player": "level2",
+                  "desc": "lower",
+                  "points": 1
+                },
+                "lowerPart": {
+                  "player": "level2",
+                  "desc": "lower",
+                  "points": 1
+                },
+                "winner": "upper",
+                "firstChild": {
+                  "upperPart": {
+                    "player": "level3",
+                    "desc": "lower",
+                    "points": 1
+                  },
+                  "lowerPart": {
+                    "player": "level3",
+                    "desc": "lower",
+                    "points": 1
+                  },
+                  "winner": "lower"
+                },
+                "secondChild": {
+                  "upperPart": {
+                    "player": "level3",
+                    "desc": "lower",
+                    "points": 1
+                  },
+                  "lowerPart": {
+                    "player": "level3",
+                    "desc": "lower",
+                    "points": 1
+                  },
+                  "winner": "lower"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "id": "basic-4",
+      "type": "single-elimination",
+      "brackets": {
+        "upper": {
+          "type": "upper",
+          "bracketTops": [
+            {
+              "upperPart": {
+                "player": "Jean-Emmanuel Depraz",
+                "desc": "",
+                "points": 0
+              },
+              "lowerPart": {
+                "player": "Shahar Shenhar",
+                "desc": "",
+                "points": 2
+              },
+              "winner": "lower",
+              "firstChild": {
+                "upperPart": {
+                  "player": "Raphaël Lévy",
+                  "desc": "",
+                  "points": 1
+                },
+                "lowerPart": {
+                  "player": "Jean-Emmanuel Depraz",
+                  "desc": "",
+                  "points": 2
+                },
+                "winner": "lower",
+                "firstChild": {
+                  "upperPart": {
+                    "player": "Rei Sato",
+                    "desc": "",
+                    "points": 1
+                  },
+                  "lowerPart": {
+                    "player": "Raphaël Lévy",
+                    "desc": "",
+                    "points": 2
+                  },
+                  "winner": "lower"
+                },
+                "secondChild": {
+                  "upperPart": {
+                    "player": "Greg Orange",
+                    "desc": "",
+                    "points": 0
+                  },
+                  "lowerPart": {
+                    "player": "Jean-Emmanuel Depraz",
+                    "desc": "",
+                    "points": 2
+                  },
+                  "winner": "lower"
+                }
+              },
+              "secondChild": {
+                "upperPart": {
+                  "player": "Shahar Shenhar",
+                  "desc": "",
+                  "points": 2
+                },
+                "lowerPart": {
+                  "player": "Marcio Carvalho",
+                  "desc": "",
+                  "points": 1
+                },
+                "winner": "upper",
+                "firstChild": {
+                  "upperPart": {
+                    "player": "Kai Budde",
+                    "desc": "",
+                    "points": 0
+                  },
+                  "lowerPart": {
+                    "player": "Shahar Shenhar",
+                    "desc": "",
+                    "points": 2
+                  },
+                  "winner": "lower"
+                },
+                "secondChild": {
+                  "upperPart": {
+                    "player": "Brian Braun-Duin",
+                    "desc": "",
+                    "points": 1
+                  },
+                  "lowerPart": {
+                    "player": "Marcio Carvalho",
+                    "desc": "",
+                    "points": 2
+                  },
+                  "winner": "lower"
+                }
+              }
+            },
+            {
+              "upperPart": {
+                "player": "Matias Leveratto",
+                "desc": "",
+                "points": 1
+              },
+              "lowerPart": {
+                "player": "Brad Nelson",
+                "desc": "",
+                "points": 2
+              },
+              "winner": "lower",
+              "firstChild": {
+                "upperPart": {
+                  "player": "Ken Yukuhiro",
+                  "desc": "",
+                  "points": 1
+                },
+                "lowerPart": {
+                  "player": "Matias Leveratto",
+                  "desc": "",
+                  "points": 2
+                },
+                "winner": "lower",
+                "firstChild": {
+                  "upperPart": {
+                    "player": "Ken Yukuhiro",
+                    "desc": "",
+                    "points": 2
+                  },
+                  "lowerPart": {
+                    "player": "Simon Görtzen",
+                    "desc": "",
+                    "points": 1
+                  },
+                  "winner": "upper"
+                },
+                "secondChild": {
+                  "upperPart": {
+                    "player": "Matias Leveratto",
+                    "desc": "",
+                    "points": 2
+                  },
+                  "lowerPart": {
+                    "player": "Lee Shi Tian",
+                    "desc": "",
+                    "points": 1
+                  },
+                  "winner": "upper"
+                }
+              },
+              "secondChild": {
+                "upperPart": {
+                  "player": "Shota Yasooka",
+                  "desc": "",
+                  "points": 1
+                },
+                "lowerPart": {
+                  "player": "Brad Nelson",
+                  "desc": "",
+                  "points": 2
+                },
+                "winner": "lower",
+                "firstChild": {
+                  "upperPart": {
+                    "player": "Shota Yasooka",
+                    "desc": "",
+                    "points": 2
+                  },
+                  "lowerPart": {
+                    "player": "Kentaro Yamamoto",
+                    "desc": "",
+                    "points": 1
+                  },
+                  "winner": "upper"
+                },
+                "secondChild": {
+                  "upperPart": {
+                    "player": "Brad Nelson",
+                    "desc": "",
+                    "points": 2
+                  },
+                  "lowerPart": {
+                    "player": "John Rolf",
+                    "desc": "",
+                    "points": 1
+                  },
+                  "winner": "upper"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.options": {
+    "ignorePath": ".gitignore"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
