@@ -4,6 +4,7 @@ import { useParams } from "react-router"
 import { Link } from "react-router-dom"
 import { Tournament, useApi } from "../common/api"
 import { Spinner } from "../common/Spinner"
+import { BracketView } from "./BracketView"
 
 export default function TournamentView() {
   const { tournamentId } = useParams<Record<string, string>>()
@@ -19,7 +20,9 @@ export default function TournamentView() {
 
       {tournament != null ? (
         <Box my={8}>
-          <Typography variant="body2">{JSON.stringify(tournament, null, 2)}</Typography>
+          <BracketView bracket={tournament.brackets.upper} />
+          {tournament.brackets.lower && <BracketView bracket={tournament.brackets.lower} />}
+          {tournament.brackets.final && <BracketView bracket={tournament.brackets.final} />}
         </Box>
       ) : (
         <Spinner />

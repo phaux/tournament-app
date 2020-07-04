@@ -1,5 +1,5 @@
 import { Container, createMuiTheme, CssBaseline } from "@material-ui/core"
-import { lightBlue, pink } from "@material-ui/core/colors"
+import { deepOrange, orange } from "@material-ui/core/colors"
 import { ThemeProvider } from "@material-ui/styles"
 import * as React from "react"
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom"
@@ -9,8 +9,8 @@ import { Spinner } from "./common/Spinner"
 const theme = createMuiTheme({
   palette: {
     type: "dark",
-    primary: lightBlue,
-    secondary: pink,
+    primary: orange,
+    secondary: deepOrange,
   },
 })
 
