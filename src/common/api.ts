@@ -1,3 +1,18 @@
+import { useQuery } from "react-query"
+
+const API_URL = "http://localhost:3000/"
+
+export function useApi<T = unknown>(endpoint: string) {
+  const { data } = useQuery([endpoint], async (endpoint) => {
+    const url = new URL(endpoint, API_URL).href
+    const res = await fetch(url)
+    // TODO: handle res.ok != true
+    const data = (await res.json()) as T
+    return data
+  })
+  return data
+}
+
 export interface Tournament {
   id: string
   type: "single-elimination" | "double-elimination" | "double-elimination-finals"
