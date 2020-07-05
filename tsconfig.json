@@ -6,6 +6,6 @@
     "moduleResolution": "Node",
     "noEmit": true,
     "strict": true,
-    "target": "ESNext"
+    "target": "ES2019"
   }
 }

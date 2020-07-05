@@ -3,11 +3,11 @@ import * as React from "react"
 import { Match } from "../common/api"
 import { PlayerBox } from "./PlayerBox"
 
-export function MatchCard(props: { match: Match }) {
+export const MatchCard = React.forwardRef((props: { match: Match }, ref) => {
   const { match } = props
 
   return (
-    <Paper>
+    <Paper ref={ref}>
       <List disablePadding>
         <PlayerBox player={match.upperPart} isWinner={match.winner === "upper"} />
         <Divider />
@@ -15,4 +15,4 @@ export function MatchCard(props: { match: Match }) {
       </List>
     </Paper>
   )
-}
+})

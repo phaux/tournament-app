@@ -14,6 +14,7 @@
     "project": "./tsconfig.json"
   },
   "rules": {
+    "@typescript-eslint/ban-ts-comment": ["error", { "ts-expect-error": false }],
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/method-signature-style": "error",
     "@typescript-eslint/no-unused-vars": "off",
