@@ -39,5 +39,5 @@ export interface Match {
 export interface Player {
   player: string // name of a player
   desc: string // additional description
-  points: number
+  points: number | null
 }

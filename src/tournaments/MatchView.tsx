@@ -29,10 +29,11 @@ export function MatchView(props: { match: Match; cardRef?: React.RefObject<Eleme
       display="flex"
       flexDirection="row"
       alignItems="center"
+      flexWrap="wrap"
     >
       {/* render the child matches on the left first, if any */}
       {(match.firstChild || match.secondChild) && (
-        <Box m={2} display="flex" flexDirection="column" justifyContent="space-evenly">
+        <Box m={2} display="flex" flexGrow={1} flexDirection="column" alignItems="stretch">
           {match.firstChild && <MatchView match={match.firstChild} cardRef={firstChildRef} />}
           {match.firstChild && match.secondChild && <Box my={1} /> /* spacing */}
           {match.secondChild && <MatchView match={match.secondChild} cardRef={secondChildRef} />}
@@ -40,7 +41,7 @@ export function MatchView(props: { match: Match; cardRef?: React.RefObject<Eleme
       )}
 
       {/* render the current match card */}
-      <Box m={2} minWidth={250}>
+      <Box m={2} minWidth={180} maxWidth={320} flexGrow={100}>
         <MatchCard ref={selfRef} match={match} />
       </Box>
 

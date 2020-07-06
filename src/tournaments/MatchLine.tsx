@@ -9,12 +9,16 @@ import * as React from "react"
 export function MatchLine(props: { start: DOMRectReadOnly; end: DOMRectReadOnly }) {
   const { start, end } = props
   const theme = useTheme()
-  const curve = theme.spacing(4)
   const color = theme.palette.divider
   const startX = start.left
   const startY = start.top + start.height / 2
   const endX = end.right
   const endY = end.top + end.height / 2
+  let curve = theme.spacing(4)
+  if (startX < endX) {
+    // boxes are flipped, make the line more curvy
+    curve *= 4
+  }
 
   return (
     <SvgContainer>
