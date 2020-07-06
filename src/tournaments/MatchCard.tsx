@@ -7,7 +7,7 @@ export const MatchCard = React.forwardRef((props: { match: Match }, ref) => {
   const { match } = props
 
   return (
-    <Paper ref={ref}>
+    <Paper ref={ref} elevation={4}>
       <List disablePadding>
         <PlayerBox player={match.upperPart} isWinner={match.winner === "upper"} />
         <Divider />

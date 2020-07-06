@@ -2,6 +2,7 @@ import { Box, Button, Grid, Typography } from "@material-ui/core"
 import * as React from "react"
 import { Link } from "react-router-dom"
 import { Tournament, useApi } from "../common/api"
+import { formatTitle } from "../common/formatTitle"
 import { Spinner } from "../common/Spinner"
 
 export default function IndexScreen() {
@@ -26,7 +27,7 @@ export default function IndexScreen() {
                   variant="outlined"
                   fullWidth
                 >
-                  {tournament.id}
+                  {formatTitle(tournament.id)}
                 </Button>
               </Grid>
             ))}

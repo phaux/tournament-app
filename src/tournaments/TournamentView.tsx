@@ -3,6 +3,7 @@ import * as React from "react"
 import { useParams } from "react-router"
 import { Link } from "react-router-dom"
 import { Tournament, useApi } from "../common/api"
+import { formatTitle } from "../common/formatTitle"
 import { Spinner } from "../common/Spinner"
 import { BracketView } from "./BracketView"
 
@@ -14,7 +15,7 @@ export default function TournamentView() {
     <>
       <Box my={8}>
         <Typography variant="h4" align="center">
-          Tournament {tournamentId}
+          Tournament {formatTitle(tournamentId)}
         </Typography>
       </Box>
 
