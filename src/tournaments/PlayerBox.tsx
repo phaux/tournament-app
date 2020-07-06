@@ -10,7 +10,12 @@ export function PlayerBox(props: { player: Player; isWinner?: boolean }) {
       <ListItemText
         primary={
           <>
-            {player.player || <>&nbsp;</>} {isWinner && <span title="winner">🏆</span>}
+            {player.player || <>&nbsp;</>}{" "}
+            {isWinner && (
+              <Typography component="span" color="primary" title="winner">
+                🏆
+              </Typography>
+            )}
           </>
         }
       />
