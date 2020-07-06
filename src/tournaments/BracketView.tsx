@@ -3,10 +3,15 @@ import { ExpandMore } from "@material-ui/icons"
 import * as React from "react"
 import { Bracket } from "../common/api"
 import { formatTitle } from "../common/formatTitle"
+import { useResizeObserver } from "../common/useResizeObserver"
 import { MatchView } from "./MatchView"
 
 export function BracketView(props: { bracket: Bracket }) {
   const { bracket } = props
+  const boxRef = React.useRef<Element>(null)
+
+  // force rerender on container resize to update the lines
+  useResizeObserver(boxRef)
 
   return (
     <Accordion>
@@ -18,7 +23,11 @@ export function BracketView(props: { bracket: Bracket }) {
         <Typography variant="subtitle1">{formatTitle(bracket.type)} bracket</Typography>
       </AccordionSummary>
       <AccordionDetails>
-        <Box flexGrow={1}>
+        <Box
+          // @ts-expect-error missing ref prop in Box types
+          ref={boxRef}
+          flexGrow={1}
+        >
           {bracket.bracketTops.map((match, idx) => (
             <MatchView key={idx} match={match} />
           ))}
