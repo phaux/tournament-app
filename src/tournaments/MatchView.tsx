@@ -19,6 +19,9 @@ export function MatchView(props: { match: Match; cardRef?: React.RefObject<Eleme
   // second child card (used for end of the line, set from child's `cardRef` prop)
   const secondChildRef = React.useRef<Element>(null)
   const secondChildRect = useBoundingRect(secondChildRef, containerRef)
+  // use bottom of this element to draw an `S` shaped line between wrapped elements
+  const separatorRef = React.useRef<Element>(null)
+  const separatorRect = useBoundingRect(separatorRef, containerRef)
 
   return (
     <Box
@@ -33,7 +36,15 @@ export function MatchView(props: { match: Match; cardRef?: React.RefObject<Eleme
     >
       {/* render the child matches on the left first, if any */}
       {(match.firstChild || match.secondChild) && (
-        <Box m={2} display="flex" flexGrow={1} flexDirection="column" alignItems="stretch">
+        <Box
+          // @ts-expect-error: missing type for ref
+          ref={separatorRef}
+          m={2}
+          display="flex"
+          flexGrow={1}
+          flexDirection="column"
+          alignItems="stretch"
+        >
           {match.firstChild && <MatchView match={match.firstChild} cardRef={firstChildRef} />}
           {match.firstChild && match.secondChild && <Box my={1} /> /* spacing */}
           {match.secondChild && <MatchView match={match.secondChild} cardRef={secondChildRef} />}
@@ -46,8 +57,12 @@ export function MatchView(props: { match: Match; cardRef?: React.RefObject<Eleme
       </Box>
 
       {/* render the lines connecting cards */}
-      {selfRect && firstChildRect && <MatchLine start={selfRect} end={firstChildRect} />}
-      {selfRect && secondChildRect && <MatchLine start={selfRect} end={secondChildRect} />}
+      {selfRect && firstChildRect && separatorRect && (
+        <MatchLine start={selfRect} end={firstChildRect} wrapY={separatorRect.bottom + 16} />
+      )}
+      {selfRect && secondChildRect && separatorRect && (
+        <MatchLine start={selfRect} end={secondChildRect} wrapY={separatorRect.bottom + 16} />
+      )}
     </Box>
   )
 }
