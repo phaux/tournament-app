@@ -5,11 +5,13 @@
 
 ## 💡 Developing
 
+Clone the repo and run `npm install`.
+
 Run `npm start` to start development server.
 
 ## 🔧 Building
 
-Run `npm run build` to build.
+Run `npm run build` to build. Output will be in `dist/` directory.
 
 ## 🔎 Testing
 
